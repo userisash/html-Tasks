@@ -1,0 +1,35 @@
+.nav{
+    background: #f4f4f4;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav a{
+    position: relative;
+    text-decoration: none;
+}
+.nav a::before{
+    content: '';
+    background: #040404;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    height: 3px;
+    width: 0%;
+    transition: 1s;
+}
+.nav a::after{
+    content: '';
+    background: #040404;
+    position: absolute;
+    right: 0;
+    top:-10px;
+    height: 3px;
+    width: 0%;
+    transition: 1s;
+}
+.nav a:hover::before,
+nav a:hover::after{
+    width: 100%;
+}
