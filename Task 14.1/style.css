@@ -1,0 +1,20 @@
+.box{
+    background: red;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    position: relative;
+}
+.box::after{
+    content: '';
+    background: purple;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: width 2s;
+}
+.box:hover::after{
+    width: 0;
+}
